@@ -1,10 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import CartMin from '../components/CartMin';
+import Animation_loading from '../components/Animation_loading.js';
+import No_results from '../components/No_results.js';
+import Error from '../components/No_results.js';
 import { distribution, selectlist } from '../store/card';
 import CartInfo from '../containers/CartInfo.js';
 export default function CartList() {
   const dispatch = useDispatch(),
+    [result, setResult] = useState(''),
     listofCart = useSelector(selectlist),
     form = document.querySelector('form'),
     serhInput = document.querySelector('.search__input'),
@@ -19,20 +23,32 @@ export default function CartList() {
       };
     };
   useEffect(() => {
-    serhInput.addEventListener('keyup', debounce(render,1000));
+    serhInput.addEventListener('keyup', debounce(render, 1000));
     form.addEventListener('submit', render);
     function render(event) {
+      setResult(Animation_loading);
       event.preventDefault();
       let search = document.querySelector('.search__input').value;
       fetch(`http://openlibrary.org/search.json?q=${search}`)
         .then(response => response.json())
         .then(response => {
-          dispatch(distribution(response.docs));
-        });
+          console.log(response);
+          if (response.numFound > 0) {
+            setResult('');
+            dispatch(distribution(response.docs))
+          } else {
+            setResult(No_results);
+            dispatch(distribution([]))
+          }
+        })
+        .catch(() => {
+        setResult(Error);
+    });
     }
   }, [dispatch, form, listofCart, serhInput]);
   return (
     <>
+      {result}
       <CartInfo />
       {listofCart.map(elem => {
         return (
