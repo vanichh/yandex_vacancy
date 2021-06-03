@@ -12,11 +12,12 @@ export default function CartMax(props) {
   }
   return (
     <div className='Cart-info'>
-      <div className='Cart-info__close' onClick={closed}>&#10006;</div>
+      <div className='Cart-info__close' onClick={closed}>
+        &#10006;
+      </div>
       <img className='Cart-info__img' src={img} alt={props.title} />
       <div className='Cart-info__list'>
-        <p>Название</p>
-        <p>{props.title}</p>
+        <h3 className='Cart-info__heading'>{props.title}</h3>
         <p>Автор</p>
         <p>{props.author}</p>
         <p>Дата пуликации</p>

@@ -21,7 +21,7 @@ export const card = createSlice({
         } else {
           obj.author = 'Нет информации';
         }
-        obj.key = key.key.split('/').pop();
+        obj.key = key.key.replace(/\/works\//,'');
         if (key.isbn !== undefined) {
           obj.isbn = key.isbn.join(', ');
         } else {
