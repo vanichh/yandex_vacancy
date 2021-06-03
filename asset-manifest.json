@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/vanichh/yandex_vacancy/static/css/main.2ca53fc9.chunk.css",
+    "main.js": "/vanichh/yandex_vacancy/static/js/main.61e66421.chunk.js",
+    "main.js.map": "/vanichh/yandex_vacancy/static/js/main.61e66421.chunk.js.map",
+    "runtime-main.js": "/vanichh/yandex_vacancy/static/js/runtime-main.5f6e0be3.js",
+    "runtime-main.js.map": "/vanichh/yandex_vacancy/static/js/runtime-main.5f6e0be3.js.map",
+    "static/js/2.add61e93.chunk.js": "/vanichh/yandex_vacancy/static/js/2.add61e93.chunk.js",
+    "static/js/2.add61e93.chunk.js.map": "/vanichh/yandex_vacancy/static/js/2.add61e93.chunk.js.map",
+    "static/js/3.53fd4b9a.chunk.js": "/vanichh/yandex_vacancy/static/js/3.53fd4b9a.chunk.js",
+    "static/js/3.53fd4b9a.chunk.js.map": "/vanichh/yandex_vacancy/static/js/3.53fd4b9a.chunk.js.map",
+    "index.html": "/vanichh/yandex_vacancy/index.html",
+    "static/css/main.2ca53fc9.chunk.css.map": "/vanichh/yandex_vacancy/static/css/main.2ca53fc9.chunk.css.map",
+    "static/js/2.add61e93.chunk.js.LICENSE.txt": "/vanichh/yandex_vacancy/static/js/2.add61e93.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f6e0be3.js",
+    "static/js/2.add61e93.chunk.js",
+    "static/css/main.2ca53fc9.chunk.css",
+    "static/js/main.61e66421.chunk.js"
+  ]
+}
