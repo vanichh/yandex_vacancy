@@ -29,21 +29,21 @@ export default function CartList() {
       setResult(Animation_loading);
       event.preventDefault();
       let search = document.querySelector('.search__input').value;
-      fetch(`http://openlibrary.org/search.json?q=${search}`)
+      fetch(`https://openlibrary.org/search.json?q=${search}`)
         .then(response => response.json())
         .then(response => {
           console.log(response);
           if (response.numFound > 0) {
             setResult('');
-            dispatch(distribution(response.docs))
+            dispatch(distribution(response.docs));
           } else {
             setResult(No_results);
-            dispatch(distribution([]))
+            dispatch(distribution([]));
           }
         })
         .catch(() => {
-        setResult(Error);
-    });
+          setResult(Error);
+        });
     }
   }, [dispatch, form, listofCart, serhInput]);
   return (
