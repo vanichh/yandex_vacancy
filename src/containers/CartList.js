@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import CartMin from '../components/CartMin';
@@ -24,7 +25,7 @@ export default function CartList() {
     };
   useEffect(() => {
     serhInput.addEventListener('keyup', debounce(render, 1000));
-    form.addEventListener('submit', render);
+    form.addEventListener('submit', debounce(render, 1000));
     function render(event) {
       setResult(Animation_loading);
       event.preventDefault();
@@ -45,7 +46,7 @@ export default function CartList() {
           setResult(Error);
         });
     }
-  }, [dispatch, form, listofCart, serhInput]);
+  }, []);
   return (
     <>
       {result}
