@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/yandex_vacancy/static/css/main.f57debdf.chunk.css",
-    "main.js": "/yandex_vacancy/static/js/main.1a39620c.chunk.js",
-    "main.js.map": "/yandex_vacancy/static/js/main.1a39620c.chunk.js.map",
+    "main.css": "/yandex_vacancy/static/css/main.1dcae935.chunk.css",
+    "main.js": "/yandex_vacancy/static/js/main.85105e8d.chunk.js",
+    "main.js.map": "/yandex_vacancy/static/js/main.85105e8d.chunk.js.map",
     "runtime-main.js": "/yandex_vacancy/static/js/runtime-main.73b6e6fb.js",
     "runtime-main.js.map": "/yandex_vacancy/static/js/runtime-main.73b6e6fb.js.map",
     "static/js/2.add61e93.chunk.js": "/yandex_vacancy/static/js/2.add61e93.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.53fd4b9a.chunk.js": "/yandex_vacancy/static/js/3.53fd4b9a.chunk.js",
     "static/js/3.53fd4b9a.chunk.js.map": "/yandex_vacancy/static/js/3.53fd4b9a.chunk.js.map",
     "index.html": "/yandex_vacancy/index.html",
-    "static/css/main.f57debdf.chunk.css.map": "/yandex_vacancy/static/css/main.f57debdf.chunk.css.map",
+    "static/css/main.1dcae935.chunk.css.map": "/yandex_vacancy/static/css/main.1dcae935.chunk.css.map",
     "static/js/2.add61e93.chunk.js.LICENSE.txt": "/yandex_vacancy/static/js/2.add61e93.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.73b6e6fb.js",
     "static/js/2.add61e93.chunk.js",
-    "static/css/main.f57debdf.chunk.css",
-    "static/js/main.1a39620c.chunk.js"
+    "static/css/main.1dcae935.chunk.css",
+    "static/js/main.85105e8d.chunk.js"
   ]
 }
