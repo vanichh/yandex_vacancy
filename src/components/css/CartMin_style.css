@@ -1,9 +1,13 @@
+:root {
+  --width-card: 200px;
+}
+
 .Cart {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px;
-  max-width: 200px;
+  max-width: var(--width-card);
   padding: 10px;
   box-shadow: 0 0 2px 2px rgba(34, 60, 80, 0.2);
   cursor: pointer;
@@ -12,7 +16,7 @@
 
 .Cart__header,
 .Card__autor {
-  max-width: 200px;
+  max-width: var(--width-card);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -20,7 +24,17 @@
 }
 
 .Card__img {
-  width: 200px;
+  width: var(--width-card);
   max-height: 300px;
   margin: auto;
+}
+
+@media(max-width: 380px) {
+  :root {
+    --width-card: 140px;
+  }
+
+  #root {
+    justify-content: space-between;
+  }
 }

@@ -25,10 +25,10 @@ export default function CartList() {
     };
   useEffect(() => {
     serhInput.addEventListener('keyup', debounce(render, 1000));
-    form.addEventListener('submit', debounce(render, 1000));
+    form.addEventListener('submit', render);
     function render(event) {
-      setResult(Animation_loading);
       event.preventDefault();
+      setResult(Animation_loading);
       let search = document.querySelector('.search__input').value;
       fetch(`https://openlibrary.org/search.json?q=${search}`)
         .then(response => response.json())

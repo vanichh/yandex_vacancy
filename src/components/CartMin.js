@@ -3,7 +3,7 @@ import './css/CartMin_style.css';
 import img_error from './img/img_error.png';
 
 export default function CartMin(props) {
-  let img = `http://covers.openlibrary.org/b/id/${props.img}.jpg`;
+  let img = `http://covers.openlibrary.org/b/id/${props.img}-M.jpg`;
   if (!props.img) img = img_error;
   
   return (

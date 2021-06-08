@@ -42,12 +42,14 @@
   display: grid;
   grid-template-columns: 140px auto;
   align-items: center;
+  grid-template-rows: 50px 15px repeat(4, 1fr);
 }
 
 .Cart-info__list p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin: 0;
 }
 
 .Cart-info__img {
@@ -60,8 +62,16 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-  text-align: start;
   padding-right: 10px;
-  padding-top: 10px;
   align-self: start;
+  margin-top: 0;
+}
+
+.Cart-info__band {
+  grid-column: span 2;
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: black;
+  margin: 0;
 }
