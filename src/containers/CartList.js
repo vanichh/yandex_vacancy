@@ -33,7 +33,6 @@ export default function CartList() {
       fetch(`https://openlibrary.org/search.json?q=${search}`)
         .then(response => response.json())
         .then(response => {
-          console.log(response);
           if (response.numFound > 0) {
             setResult('');
             dispatch(distribution(response.docs));

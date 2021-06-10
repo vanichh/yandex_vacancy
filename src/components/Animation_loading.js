@@ -1,17 +1,15 @@
 import './css/Animation_loading.css';
 export default function Animation() {
   return (
-    <div className='animate'>
-      <div id='fountainG'>
-        <div id='fountainG_1' className='fountainG'></div>
-        <div id='fountainG_2' className='fountainG'></div>
-        <div id='fountainG_3' className='fountainG'></div>
-        <div id='fountainG_4' className='fountainG'></div>
-        <div id='fountainG_5' className='fountainG'></div>
-        <div id='fountainG_6' className='fountainG'></div>
-        <div id='fountainG_7' className='fountainG'></div>
-        <div id='fountainG_8' className='fountainG'></div>
-      </div>
+    <div id='circularG'>
+      <div id='circularG_1' className='circularG'></div>
+      <div id='circularG_2' className='circularG'></div>
+      <div id='circularG_3' className='circularG'></div>
+      <div id='circularG_4' className='circularG'></div>
+      <div id='circularG_5' className='circularG'></div>
+      <div id='circularG_6' className='circularG'></div>
+      <div id='circularG_7' className='circularG'></div>
+      <div id='circularG_8' className='circularG'></div>
     </div>
   );
 }

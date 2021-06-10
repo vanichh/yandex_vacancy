@@ -11,6 +11,7 @@
   padding: 10px;
   box-shadow: 0 0 2px 2px rgba(34, 60, 80, 0.2);
   cursor: pointer;
+  border-radius: 3px;
 }
 
 
@@ -27,14 +28,22 @@
   width: var(--width-card);
   max-height: 300px;
   margin: auto;
+  border-radius: 3px;
 }
 
-@media(max-width: 380px) {
+@media(max-width: 480px) {
   :root {
     --width-card: 140px;
   }
-
-  #root {
-    justify-content: space-between;
+}
+@media(max-width: 360px) {
+  .Cart {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media(max-width: 330px){
+  #root{
+    justify-content: space-around;
   }
 }

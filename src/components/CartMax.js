@@ -5,7 +5,7 @@ import img_error from './img/img_error.png';
 import './css/CartMax_style.css';
 export default function CartMax(props) {
   const CartInfo = React.createRef();
-  //document.body.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
   const dispatch = useDispatch();
   let img = `http://covers.openlibrary.org/b/id/${props.img}-L.jpg`;
   let style = {
