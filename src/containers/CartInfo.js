@@ -13,6 +13,7 @@ export default function CartInfo() {
       dispatch(
         info(
           listofCart.filter(item => {
+            
             return item.key === attribute;
           })
         )

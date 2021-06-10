@@ -1,9 +1,19 @@
+.Modal {
+position: fixed;
+top: 0;
+left: 0;
+height: 1200px;
+width: 100vw;
+background-color: #000000a8;
+overflow: scroll;
+}
+
 .Cart-info {
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 20px;
-  position: fixed;
-  z-index: 1;
+  position: relative;
+  z-index: 999;
   width: 650px;
   height: 400px;
   background-color: #fff;
@@ -14,6 +24,19 @@
   box-shadow: 0 0 2px 2px rgba(34, 60, 80, 0.2);
 }
 
+@media (max-width: 380px) {
+  .Cart-info {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 250px;
+    height: auto;
+    top: 0;
+    transform: translate(-50%);
+  }
+}
+
 .Cart-info p:last-child {
   white-space: nowrap;
   overflow: hidden;
@@ -22,15 +45,20 @@
 
 .Cart-info__close {
   position: absolute;
-  left: calc(100% - 35px);
+  left: calc(100% - 25px);
   top: -5px;
-  height: 40px;
-  width: 40px;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   line-height: 40px;
   color: black;
-  font-size: 25px;
+}
+
+@media (max-width: 380px) {
+  .Cart-info__close {
+    left: calc(100% - 20px);
+    top: -10px;
+
+  }
 }
 
 .Cart-info__close:hover {
@@ -42,8 +70,15 @@
   display: grid;
   grid-template-columns: 140px auto;
   align-items: center;
-  grid-template-rows: 50px 15px repeat(4, 1fr);
+  grid-template-rows: minmax(50px, auto) 15px repeat(4, 1fr);
 }
+
+@media (max-width: 380px) {
+  .Cart-info__list {
+    grid-template-rows: minmax(50px, auto) 15px repeat(4, 50px);
+  }
+}
+
 
 .Cart-info__list p {
   overflow: hidden;
@@ -64,7 +99,6 @@
   margin-bottom: 0;
   padding-right: 10px;
   align-self: start;
-  margin-top: 0;
 }
 
 .Cart-info__band {
